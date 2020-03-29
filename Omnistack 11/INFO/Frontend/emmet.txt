@@ -1,0 +1,14 @@
+
+* O que é?
+O emmet auxilia na produtividade. Quando digitamos por exemplo div.login-contaioner, automaticamente ele ja cria 
+o código abaixo:
+
+
+__________________________
+* configuração
+
+basta acessa ctrl+shift+p no visual code, abrir o arquivo de settings (json)
+e inserir o seguinte configuração:
+
+"emmet.syntaxProfiles": { "javascript" : "jsx" },
+"emmet.includeLanguages": { "javascript" :  "javascriptreact"}

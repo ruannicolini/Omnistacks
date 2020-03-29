@@ -1,0 +1,5 @@
+
+*comando = npm install react-icons
+Objetivo = Instalar o pacote de icons do react
+Para utilizar basta importar import { EXEMPLO_NOME_ICON1, EXEMPLO_NOME_ICON_2 } from 'react-icons/ESCOLHA_O_PACOTE_ICONES'
+EXEMPLO Utilizado: 
