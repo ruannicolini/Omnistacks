@@ -1,0 +1,4 @@
+== Passo a Passo da criação do frontend ==
+
+*comando: npx create-react-app nome_repositorio
+objetivo = cria o repositorio a partir do create app;
