@@ -1,0 +1,46 @@
+
+KNEX
+
+*comando = npm install knex
+Objetivo = instalar a Query Builder KNEX.js
+
+*comando = npm install sqlite3
+objetivo = instalar o driver do banco que será utlizado.
+OBS = caso seja outro banco, procure o comando do banco específico aqui: http://knexjs.org/
+
+*comando = npx knex init
+objetivo = Necessário criar o arquivo de configuração do knex (knexfile.js)
+
+* criar a estrtutura de pastas do database. 
+normalmente, no src->database->migrations
+
+* colocar o arquivo knexfile.js, sinalizar o caminho do banco (Ex: './src/database/db.sqlite') e o diretorio das migrations (Ex: './src/database/migrations').
+useNullAsDefault sinaliza que o padrao é setar null onde não tem valor nos campos de tabela.
+
+development: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/db.sqlite'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault: true
+  },
+
+
+* comando = npx knex migrate:make nome_migration
+Objetivo = Criar Novas Migrate 
+
+*comando: npx knex migrate:latest
+objetivo: rodar a migrate.
+
+*comando: npx knex migrate:rollback
+objetivo: desfaz a ultima migration do comando migrate:latest.
+
+*comando: npx knex migrate:status
+objetivo: lista todas as migrations ja executadas
+
+
+
+

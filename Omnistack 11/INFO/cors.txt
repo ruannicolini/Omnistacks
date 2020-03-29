@@ -1,0 +1,3 @@
+
+*comando = npm install cors
+objetivo = Define qual endereço vai poder acessar a aplicação de backend;
